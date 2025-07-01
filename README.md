@@ -17,17 +17,17 @@ This project is a machine learning–powered web application built using **Flask
 
 ## 🧠 Prediction Parameters
 
-| Feature       | Description                           |
-|---------------|---------------------------------------|
-| Temperature   | Ambient temperature (°C)              |
-| RH            | Relative Humidity (%)                 |
-| Ws            | Wind Speed                            |
-| Rain          | Rainfall (mm)                         |
-| FFMC          | Fine Fuel Moisture Code               |
-| DMC           | Duff Moisture Code                    |
-| ISI           | Initial Spread Index                  |
-| Classes       | Fire danger class                     |
-| Region        | Encoded regional identifier           |
+| Feature     | Description                 |
+| ----------- | --------------------------- |
+| Temperature | Ambient temperature (°C)    |
+| RH          | Relative Humidity (%)       |
+| Ws          | Wind Speed                  |
+| Rain        | Rainfall (mm)               |
+| FFMC        | Fine Fuel Moisture Code     |
+| DMC         | Duff Moisture Code          |
+| ISI         | Initial Spread Index        |
+| Classes     | Fire danger class           |
+| Region      | Encoded regional identifier |
 
 ---
 
@@ -41,10 +41,12 @@ This project is a machine learning–powered web application built using **Flask
 │   └── scaler.pkl            # StandardScaler object
 ├── templates/
 │   ├── index.html            # Input form UI
-│   └── home.html             # Result display UI              
+│   └── home.html             # Result display UI
 ├── README.md
 ├── requirements.txt         # Python package requirements
 ```
+
+## Project Link: http://ml-regression-env.eba-t42jwn2p.us-east-1.elasticbeanstalk.com/
 
 ---
 
