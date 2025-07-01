@@ -89,16 +89,15 @@
     <div class="container">
         <h1>🔥 FWI Prediction 🔥</h1>
         <form action="{{ url_for('predict_datapoint') }}" method="post">
-            <input type="text" name="Temperature" placeholder="Temperature" required>
-            <input type="text" name="RH" placeholder="Relative Humidity (RH)" required>
-            <input type="text" name="Ws" placeholder="Wind Speed (Ws)" required>
-            <input type="text" name="Rain" placeholder="Rainfall" required>
-            <input type="text" name="FFMC" placeholder="FFMC" required>
-            <input type="text" name="DMC" placeholder="DMC" required>
-            <input type="text" name="ISI" placeholder="ISI" required>
-            <input type="text" name="Classes" placeholder="Fire Class" required>
-            <input type="text" name="Region" placeholder="Region" required>
-
+            <input type="text" name="Temperature" placeholder="Temperature" title="Ambient temperature in Celsius. Affects fire ignition." required>
+            <input type="text" name="RH" placeholder="Relative Humidity (RH)" title="Relative humidity as a percentage. Lower RH supports fire spread." required>
+            <input type="text" name="Ws" placeholder="Wind Speed (Ws)" title="Wind speed in kilometers per hour. Wind accelerates fire spread." required>
+            <input type="text" name="Rain" placeholder="Rainfall" title="Rainfall in millimeters. More rain generally reduces fire risk." required>
+            <input type="text" name="FFMC" placeholder="FFMC" title="Fine Fuel Moisture Code. Indicates how easily fine fuels ignite." required>
+            <input type="text" name="DMC" placeholder="DMC" title="Duff Moisture Code. Measures moisture in the duff layer."  required>
+            <input type="text" name="ISI" placeholder="ISI" title="Initial Spread Index. Indicates how fast a fire might initially spread." required>
+            <input type="text" name="Classes" placeholder="Fire Class" title="Enter 'fire' or 'not fire'. Indicates actual fire occurrence." required>
+            <input type="text" name="Region: 0 for Bejaia and 1 for Sidi-Bel Abbes"  title="Enter 0 for Bejaia or 1 for Sidi-Bel Abbes." placeholder="Region" required>
             <button type="submit">Predict FWI</button>
         </form>
         <div class="result">
@@ -107,7 +106,7 @@
     </div>
 </body>
 </html>
-```
+
 <!-- 
 ---
 
